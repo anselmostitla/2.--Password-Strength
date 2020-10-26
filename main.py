@@ -42,7 +42,7 @@ def mainpage():
     vectorizer_model = pickle.load(open("vectorizer.pkl",'rb')) 
 
     log_reg_model = pickle.load(open("log_reg.pkl",'rb')) 
-    # Bernoulli_Naive_Bayes_model = pickle.load(open('Bernoulli_Naive_Bayes.pkl','rb')) 
+    Bernoulli_Naive_Bayes_model = pickle.load(open('Bernoulli_Naive_Bayes.pkl','rb')) 
     # Decision_Tree_model = pickle.load(open('Decision_Tree.pkl','rb')) 
     # Random_Forest_model = pickle.load(open('Random_Forest.pkl','rb')) 
     # multi_layer_perceptron_model = pickle.load(open('multi_layer_perceptron.pkl','rb')) 
