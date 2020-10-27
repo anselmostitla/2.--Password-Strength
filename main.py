@@ -45,7 +45,7 @@ def mainpage():
     Bernoulli_Naive_Bayes_model = pickle.load(open('Bernoulli_Naive_Bayes.pkl','rb')) 
     # Decision_Tree_model = pickle.load(open('Decision_Tree.pkl','rb')) 
     # Random_Forest_model = pickle.load(open('Random_Forest.pkl','rb')) 
-    # multi_layer_perceptron_model = pickle.load(open('multi_layer_perceptron.pkl','rb')) 
+    multi_layer_perceptron_model = pickle.load(open('multi_layer_perceptron.pkl','rb')) 
 
     def word_with_white_spaces(inputs):
         characters = []
@@ -66,16 +66,16 @@ def mainpage():
     Bernoulli_Naive_Bayes_model_test = Bernoulli_Naive_Bayes_model.predict(password_vec)
     # Decision_Tree_model_test = Decision_Tree_model.predict(password_vec)
     # Random_Forest_model_test = Random_Forest_model.predict(password_vec)
-    # multi_layer_perceptron_model_test = multi_layer_perceptron_model.predict(password_vec)
+    multi_layer_perceptron_model_test = multi_layer_perceptron_model.predict(password_vec)
 
     # return "render_template('main.html')"
 
     return render_template('main.html',
                             log_reg = log_reg_model_test[0],
-                            Bernoulli_Naive = Bernoulli_Naive_Bayes_model_test[0]#,
+                            Bernoulli_Naive = Bernoulli_Naive_Bayes_model_test[0],
+                            multi_layer = multi_layer_perceptron_model_test[0]#,
                             # Decision_Tree = Decision_Tree_model_test[0],
                             # Random_Forest = Random_Forest_model_test[0],
-                            # multi_layer = multi_layer_perceptron_model_test[0]
                             )
 
 if __name__ == '__main__':
