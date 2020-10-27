@@ -74,7 +74,7 @@ def mainpage():
                             log_reg = log_reg_model_test[0],
                             Bernoulli_Naive = Bernoulli_Naive_Bayes_model_test[0],
                             Decision_Tree = Decision_Tree_model_test[0],
-                            Random_Forest = Random_Forest_model_test[0],
+                            # Random_Forest = Random_Forest_model_test[0],
                             multi_layer = multi_layer_perceptron_model_test[0]
                             )
 
