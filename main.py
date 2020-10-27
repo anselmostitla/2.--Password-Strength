@@ -63,10 +63,10 @@ def mainpage():
     password_vec = vectorizer_model.transform(password_list)
 
     log_reg_model_test = log_reg_model.predict(password_vec)
-    Bernoulli_Naive_Bayes_model_test = Bernoulli_Naive_Bayes_model.predict(password_vec)
-    Decision_Tree_model_test = Decision_Tree_model.predict(password_vec)
-    Random_Forest_model_test = Random_Forest_model.predict(password_vec)
-    multi_layer_perceptron_model_test = multi_layer_perceptron_model.predict(password_vec)
+    # Bernoulli_Naive_Bayes_model_test = Bernoulli_Naive_Bayes_model.predict(password_vec)
+    # Decision_Tree_model_test = Decision_Tree_model.predict(password_vec)
+    # Random_Forest_model_test = Random_Forest_model.predict(password_vec)
+    # multi_layer_perceptron_model_test = multi_layer_perceptron_model.predict(password_vec)
 
     # return "render_template('main.html')"
 
